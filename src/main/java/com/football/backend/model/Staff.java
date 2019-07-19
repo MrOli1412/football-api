@@ -3,6 +3,7 @@ package com.football.backend.model;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,6 +15,7 @@ import javax.validation.constraints.NotBlank;
 @Entity
 @Table(name = "staff")
 @Data
+@EqualsAndHashCode(callSuper = false)
 public class Staff extends Person {
 
     @Id
